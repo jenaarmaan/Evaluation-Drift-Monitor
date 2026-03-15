@@ -29,12 +29,15 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   overflow-x: hidden;
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% -20%, rgba(34, 211, 238, 0.15), transparent 60%),
     radial-gradient(circle at 0% 100%, rgba(16, 185, 129, 0.05), transparent 40%);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -57,6 +60,7 @@ h1, h2, h3, h4 {
 .accent-text {
   background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -87,8 +91,15 @@ h1, h2, h3, h4 {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
